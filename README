@@ -1,0 +1,14 @@
+HTTP Get Request to the blog's feed
+
+Example
+
+# Get feed my blog(midore's blog)'s
+#
+$ ./run-blogger-atom.rb -f 2010-01.xml -min 2010/01/01 -max 2010/01/31
+# =>
+http://midorex.blogspot.com/feeds/posts/default?published-min=2009-12-31T23:59:00&published-max=2010-02-01T00:00:00
+# print all entries created(published) from 2010/01/01 to 2010/01/31  without draft entry.
+
+# Get feed specity label
+$ ./run-blogger-atom.rb -f label-essay.xml -label essay
+# print all entries label the 'essay' without draft entry.
